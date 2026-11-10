@@ -218,3 +218,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Team credentials and the private quick-start handout
+.env.*
+*.env
+!.env.example
+.modal.toml
+.modal/
+secrets/
+secrets.toml
+secrets.json
+credentials*.json
+*.pem
+*.key
+modal_gpu_quick_start*.pdf
+
+# Downloaded model weights and local demo results
+models/
+checkpoints/
+outputs/
+*.pt
+*.pth
+*.safetensors
+*.onnx
+result-*.json
+
+# macOS metadata
+.DS_Store

@@ -121,7 +121,18 @@ modal run inference.py --text 'I really enjoyed this movie!'
 
 Check the workspace shown by `modal token info` before running the GPU commands. If you chose venv, use its activation command from step 1 instead of `conda activate`.
 
-## 5. Adapt it for your research
+## 5. Upload datasets and bring the results back
+
+Run the image example to upload a dataset, perform GPU inference, and automatically download labelled images and JSON results:
+
+```bash
+python prepare_demo_data.py
+modal run image_pipeline.py --input-dir datasets/demo
+```
+
+Use `python cloud_files.py --help` for upload, download, list, edit, and delete commands. See **[the file workflow guide](FILE_WORKFLOW.md)** for complete examples, cloud cleanup, and `.env` commands. Each image run uses a unique folder in the separate `myssp-file-demo` Volume.
+
+## 6. Adapt it for your research
 
 Open `inference.py` and follow the numbered comments:
 

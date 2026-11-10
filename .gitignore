@@ -245,3 +245,7 @@ result-*.json
 
 # macOS metadata
 .DS_Store
+
+# Local datasets and interrupted transfers
+/datasets/
+*.part
